@@ -9,23 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-var winston = require('winston');
 
-winston.remove(winston.transports.Console);
-
-winston.add(winston.transports.File, { filename: '/usr/local/log/hkdata/fp.log' });
-
-winston.exitOnError = false;
-
-
-winston.loggers.get('accessLog').remove(winston.transports.Console)
-
-
-var winstonStream = {
-    write: function (message, encoding) {
-        winston.loggers.get('accessLog').info(message)
-    }
-};
 
 
 // view engine setup
