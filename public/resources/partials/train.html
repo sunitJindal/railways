@@ -1,0 +1,38 @@
+<h2>Train schedule</h2>
+<div class="row">
+    <table class="table table-hover col-sm-10 col-sm-1">
+        <thead>
+        <tr>
+            <th>
+                Train No
+            </th>
+            <th>
+                Train Name
+            </th>
+            <th>
+                Source
+            </th>
+            <th>
+                Destination
+            </th>
+            <th>
+                Total Tickets
+            </th>
+            <th>
+                Available Tickets
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="train in trains">
+            <td>{{train.trainNo}}</td>
+            <td>{{train.trainName}}</td>
+            <td>{{train.source}}</td>
+            <td>{{train.destination}}</td>
+            <td>{{train.totalTickets}}</td>
+            <td>{{train.available}}</td>
+            <td><button class="btn btn-default" ng-click="book(train.trainNo)">Book Now</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

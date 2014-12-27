@@ -1,0 +1,25 @@
+{
+  "name": "angular-kinvey",
+  "version": "1.0.0",
+  "homepage": "http://devcenter.kinvey.com/angular/",
+  "authors": [
+    "Kinvey"
+  ],
+  "description": "Official Kinvey AngularJS library.",
+  "main": "kinvey-angular.js",
+  "keywords": [
+    "Kinvey",
+    "Angular",
+    "AngularJS"
+  ],
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "942f76337261a6a46113dd654ff1788e2b3fd51c"
+  },
+  "_source": "git://github.com/GravityJack/bower-kinvey-angular.git",
+  "_target": "~1.0.0",
+  "_originalSource": "kinvey-angular",
+  "_direct": true
+}

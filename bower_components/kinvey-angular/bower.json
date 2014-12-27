@@ -1,0 +1,15 @@
+{
+  "name": "angular-kinvey",
+  "version": "1.1.9",
+  "homepage": "http://devcenter.kinvey.com/angular/",
+  "authors": [
+    "Kinvey"
+  ],
+  "description": "Official Kinvey AngularJS library.",
+  "main": "kinvey-angular.js",
+  "keywords": [
+    "Kinvey",
+    "Angular",
+    "AngularJS"
+  ]
+}

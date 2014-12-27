@@ -1,0 +1,35 @@
+<h2>Seat reservation</h2>
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-1">
+        <h4 ng-show="showForm">Please fill booking information</h4>
+        <div class="well" ng-show="showForm">
+            <form name="book-ticket" ng-submit="bookTickets()" >
+                <div class="form-group">
+                    <label>Passenger name/s(comma separate multiple names)</label>
+                    <input type="text" class="form-control" required ng-model="passenger" />
+                </div>
+                <div class="form-group">
+                    <label>Number of tickets</label>
+                    <input type="number" class="form-control" required ng-model="seats" />
+                </div>
+
+                <input type="submit" class="btn btn-default" value="Book tickets"/>
+            </form>
+        </div>
+        <div class="alert alert-success" ng-show="showMessage">
+            {{message}}
+        </div>
+    </div>
+    <div class="col-sm-4 col-sm-offset-1">
+        <h4>Train information</h4>
+        <div ng-repeat="train in trains" class="well">
+            <div>Train no: {{train.trainNo}}</div>
+            <div>Name : {{train.trainName}}</div>
+            <div>Source station : {{train.source}}</div>
+            <div>Destination station: {{train.destination}}</div>
+            <div>Total Seats:{{train.totalTickets}}</div>
+            <div>Available seats: {{train.available}}</div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<h2>Reservation history</h2>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>
+            Traine No
+        </th>
+        <th>
+            Train Name
+        </th>
+        <th>
+            Passenger(s)
+        </th>
+        <th>Booking date</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="ticket in tickets">
+        <td>{{ticket.trainNo}}</td>
+        <td>{{ticket.trainName}}</td>
+        <td>{{ticket.passenger}}</td>
+        <td>{{ticket._kmd.ect | date: 'dd-MM-yyyy HH:mm'}}</td>
+
+    </tr>
+</table>
